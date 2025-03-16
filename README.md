@@ -1,18 +1,63 @@
-## Getting Started
+# Desafio: Simulação de Conta Bancária em Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este repositório contém um programa simples em Java que simula uma conta bancária, permitindo ao usuário consultar saldo, transferir valores e receber depósitos.
 
-## Folder Structure
+## Funcionalidades
+- Exibir informações do cliente e saldo inicial.
+- Consultar saldo atualizado.
+- Transferir um valor, verificando se há saldo suficiente.
+- Receber valores e atualizar o saldo.
+- Interface interativa via terminal.
 
-The workspace contains two folders by default, where:
+## Tecnologias Utilizadas
+- Java
+- Scanner (para entrada de dados do usuário)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Como Executar o Programa
+1. Certifique-se de ter o Java instalado em seu sistema.
+2. Clone este repositório:
+   ```bash
+   git clone https://github.com/Lelibi/aplicacao_java.git
+   ```
+3. Compile o programa:
+   ```bash
+   javac Desafio.java
+   ```
+4. Execute o programa:
+   ```bash
+   java Desafio
+   ```
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Estrutura do Código
+O programa inicia exibindo o nome do cliente, o tipo de conta e o saldo inicial. Em seguida, apresenta um menu interativo onde o usuário pode escolher entre:
+- **Consultar saldo**: Exibe o saldo atual.
+- **Transferir valor**: Solicita um valor a ser transferido e verifica se há saldo suficiente.
+- **Receber valor**: Permite adicionar um valor ao saldo.
+- **Sair**: Encerra o programa.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+O loop continua executando até que o usuário escolha a opção de sair.
 
-## Dependency Management
+## Exemplo de Uso
+```
+***********************
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Nome do cliente: Clark Kent
+Tipo conta: Corrente
+Saldo atual: 1599.99
+
+***********************
+Digite sua opção
+1 - Consultar saldo
+2 - Transferir valor
+3 - Receber valor
+4 - Sair
+```
+
+## Melhorias Futuras
+- Implementar autenticação de usuário.
+- Criar uma interface gráfica para interação mais intuitiva.
+- Adicionar persistência de dados para armazenar informações das transações.
+
+---
+Desenvolvido por [Lelibi](https://github.com/Lelibi).
+
